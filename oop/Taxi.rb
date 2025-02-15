@@ -23,23 +23,24 @@ class Taxi
 
 
 
-    def available?
+    def self.available?
         @available
 
     end
 
-    def allTaxis
+    def self.allTaxis
 
-        @taxis
+        @@taxis
+    end
     
     def self.availableTaxis
 
-        @@taxis.select{|taxis|taxi.available?}
+        @@taxis.select{ |taxi| taxi.available?}
     end
 
-    def taxi_details
+    def to_s
 
-        "Taxi ##{@id} | Driver: #{@driver_name} | Available: #{@available}"
+        "Taxi ##{@id} | Driver: #{@name} | Available: #{@available}"
 
     end
 
