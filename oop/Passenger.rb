@@ -28,4 +28,6 @@ taxi1 = Taxi.new("Kani Sacco", "C23V4D21")
 
 passenger1 = Passenger.new("Oliver")
 
+
+passenger1.book_taxi
 puts Taxi.allTaxis

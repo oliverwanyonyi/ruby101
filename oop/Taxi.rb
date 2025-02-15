@@ -23,7 +23,7 @@ class Taxi
 
 
 
-    def self.available?
+    def available?
         @available
 
     end
