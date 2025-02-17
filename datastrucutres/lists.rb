@@ -18,3 +18,13 @@ fruits.pop()
 fruits.unshift('watermelon')
 
 # puts fruits
+
+#iterating through a list
+
+# for item in fruits
+#   puts"This is a #{item}"
+# end
+
+fruits.each do | item |
+  puts item
+end
